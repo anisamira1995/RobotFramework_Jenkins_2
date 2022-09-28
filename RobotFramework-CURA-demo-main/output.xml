@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.8 on win32)" generated="20220929 00:39:54.814" rpa="false" schemaversion="3">
+<suite id="s1" name="1 0 Make Appointment" source="C:\RobotFramework-CURA-demo-main\Test_suite\1_0_make_appointment.robot">
+<test id="s1-t1" name="Make Appoiment" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://katalon-demo-cura.herokuapp.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220929 00:39:55.090" level="INFO">Opening browser 'chrome' to base url 'https://katalon-demo-cura.herokuapp.com/'.</msg>
+<msg timestamp="20220929 00:40:17.954" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000020F4BAFAA08&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/9b57009a1fe5a38c53b0155f87f74db2/screenshot</msg>
+<msg timestamp="20220929 00:40:19.985" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000020F4BB0BAC8&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/9b57009a1fe5a38c53b0155f87f74db2/screenshot</msg>
+<msg timestamp="20220929 00:40:22.019" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000020F4BB14388&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/9b57009a1fe5a38c53b0155f87f74db2/screenshot</msg>
+<msg timestamp="20220929 00:40:24.070" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='127.0.0.1', port=55025): Max retries exceeded with url: /session/9b57009a1fe5a38c53b0155f87f74db2/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000020F4BB14C08&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<msg timestamp="20220929 00:40:24.073" level="FAIL">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))</msg>
+<status status="FAIL" starttime="20220929 00:39:55.090" endtime="20220929 00:40:25.347"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="btn-make-appointment"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.348" endtime="20220929 00:40:25.348"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="txt-username"]</arg>
+<arg>John Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.348" endtime="20220929 00:40:25.348"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="txt-password"]</arg>
+<arg>ThisIsNotAPassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.348" endtime="20220929 00:40:25.349"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="btn-login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.349" endtime="20220929 00:40:25.349"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>xpath=//*[@id="combo_facility"]</arg>
+<arg>Hongkong CURA Healthcare Center</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.349" endtime="20220929 00:40:25.349"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="chk_hospotal_readmission"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.349" endtime="20220929 00:40:25.349"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="radio_program_medicaid"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.349" endtime="20220929 00:40:25.349"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//section[@id="appointment"]/div/div/form/div[4]/div/div/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.350" endtime="20220929 00:40:25.350"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=(.//*[normalize-space(text()) and normalize-space(.)="Sa"])[1]/following::td[25]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.350" endtime="20220929 00:40:25.350"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//section[@id="appointment"]/div/div/form/div[4]/div/div/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.350" endtime="20220929 00:40:25.350"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="txt_comment"]</arg>
+<arg>testing2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.350" endtime="20220929 00:40:25.350"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="btn-book-appointment"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.350" endtime="20220929 00:40:25.350"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.351" endtime="20220929 00:40:25.351"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath=//*[@id="summary"]/div/div/div[1]/h2</arg>
+<arg>Appointment Confirmation</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" starttime="20220929 00:40:25.351" endtime="20220929 00:40:25.351"/>
+</kw>
+<status status="FAIL" starttime="20220929 00:39:55.089" endtime="20220929 00:40:25.352">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))</status>
+</test>
+<status status="FAIL" starttime="20220929 00:39:54.816" endtime="20220929 00:40:25.353"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="1 0 Make Appointment">1 0 Make Appointment</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220929 00:40:17.954" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000020F4BAFAA08&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/9b57009a1fe5a38c53b0155f87f74db2/screenshot</msg>
+<msg timestamp="20220929 00:40:19.985" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000020F4BB0BAC8&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/9b57009a1fe5a38c53b0155f87f74db2/screenshot</msg>
+<msg timestamp="20220929 00:40:22.019" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000020F4BB14388&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/9b57009a1fe5a38c53b0155f87f74db2/screenshot</msg>
+<msg timestamp="20220929 00:40:24.070" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='127.0.0.1', port=55025): Max retries exceeded with url: /session/9b57009a1fe5a38c53b0155f87f74db2/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000020F4BB14C08&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+</errors>
+</robot>
